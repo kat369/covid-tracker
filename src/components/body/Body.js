@@ -41,7 +41,7 @@ function Body() {
          repeatCount="indefinite" />
   </path>
 </svg></div> : null}
-        {!loading && view === 'list' ? <ListView data={data} /> : <GridView data={data} />}
+        {!loading && view === 'list' ? <ListView data={data} loading={loading}/> : <GridView data={data} loading={loading}/>}
       </div>
     </div>
   );
