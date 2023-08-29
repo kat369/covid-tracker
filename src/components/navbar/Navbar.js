@@ -7,15 +7,6 @@ function Navbar() {
   
   const userContext = useContext(UserContext)
 
-  let handlelistview = ()=>{
-    userContext.setlistview(true)
-    userContext.setgridview(false)
-  }
-  
-  let handlegridview = ()=>{
-    userContext.setgridview(true)
-    userContext.setlistview(false)
-  }
      return (
         <>
         <div className="navcontainer">
