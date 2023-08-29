@@ -8,8 +8,8 @@ const tabletListHeader = [
   'Total Obs',
 ];
 
-function ListView({ data }) {
-  if (data.length === 0) {
+function ListView({ data, loading }) {
+ if (!loading && data.length === 0) {
     return <p>no data</p>
   }
   return (
