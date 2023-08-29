@@ -1,5 +1,5 @@
-function GridView({ data }) {
-  if (data.length === 0) {
+function GridView({ data, loading}) {
+ if (!loading && data.length === 0) {
     return <p>no data</p>
   }
   return (
